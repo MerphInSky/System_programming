@@ -1,0 +1,28 @@
+mkdir Work
+mkdir "Лабораторная работа №1!"
+mkdir "ФИО"
+mv "Лабораторная работа №1!" Work
+mv "ФИО" Work
+cd Work
+chmod 772 "Лабораторная работа №1!"
+chmod u-r,u-x "ФИО"
+touch 'Text @1'
+touch 'Text $2'
+touch 'Text #3'
+printf "Птица говорун отличается умом и сообразительностью! %s\n Отличается умом, отличается сообразительностью..."> "Text @1"
+cat 'Text @1' > 'Text $2'
+chmod 777 "ФИО"
+cp 'Text @1' "ФИО"
+chmod u-r,u-x "ФИО"
+tar -cf MyAchiv.tar 'Text @1'.gz
+tar -cf MyAchiv.tar  'Text #3'.gz
+head -n 1 'Text @1'.gz > 'Text #3'.gz
+echo "Будь осторожен! Преступник вооружен!" >> 'Text #3'.gz
+chmod 777 "ФИО"
+cd "ФИО"
+touch "Result_one"
+tac 'Text @1' >> "Result_one
+mv "Result_one" "Result_two"
+cd /workspaces/System_programming/Work
+cp 'ФИО'/'Text @1' 'Лабораторная работа №1!'/'Result_3'
+cat /proc/cpuinfo >> 'Лабораторная работа №1!'/'Result_3'
